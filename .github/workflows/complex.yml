@@ -4,7 +4,7 @@ on: push
 
 jobs:
   ubuntu:
-    runs-on: 
+    runs-on: Ubuntu-latest
     steps:
     - run: date
   windows:
