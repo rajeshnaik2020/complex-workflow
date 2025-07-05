@@ -6,15 +6,21 @@ jobs:
   ubuntu:
     runs-on: Ubuntu-latest
     steps:
-    - run: date
+    - run: |
+           date
+           ls
   windows:
     runs-on: windows-latest
     steps:
-    - run: date
+    - run: | 
+           date
+           ls
   macos:
     runs-on: macos-latest
     steps:
-    - run: date
+    - run: |
+           date
+           ls
   depends:
     needs: [ubuntu, windows, macos]
     runs-on:  macos-latest
